@@ -11,3 +11,4 @@ if (subject !== null) {
     default : document.write("잘못 입력했습니다. 다시 입력해 주세요.")
   }
 }
+/* 참고: document.write는 HTML 문서에 직접 내용을 추가 */
