@@ -1,3 +1,9 @@
+let number1 = prompt("첫 번째 숫자를 입력하세요.");
+let number2 = prompt("두 번째 숫자를 입력하세요.");
+
+let a = parseInt(number1);
+let b = parseInt(number2);
+
 function multiple(a, b) {
     return a * b;
 }

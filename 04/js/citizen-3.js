@@ -4,5 +4,5 @@ let init = () => {
   }
 }
 
-// console.log(`init(30, 20) : ${init(30, 20)}`);
+//console.log(`init(30, 20) : ${init(30, 20)}`);
 console.log(`init()(30, 20) : ${init()(10, 20)}`);
