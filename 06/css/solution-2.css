@@ -33,7 +33,7 @@ nav {
   background-color:#639;  
   height:100vh;
   padding:2em;
-  transform:translateX(100%);
+  transform:translateX(100%);   /* 자기 너비만큼 오른쪽으로 이동 */
   transition: transform 0.3s ease-in-out;
 }
 
@@ -48,7 +48,7 @@ nav ul {
 }
 
 nav ul li {
-  padding:1em 0;
+  padding:1em 0;  /* 부모 글자 크기 기준 1배 */
 }
 
 nav a {
