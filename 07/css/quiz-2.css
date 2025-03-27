@@ -18,7 +18,7 @@ button {
   box-shadow:1px 1px 2px #222;
 }
 
-/* noti-box로 우측 하단에 고정해 놓고, .noti를 그 안에 넣을 것! */
+/* noti-box로 우측 상단에 고정해 놓고, .noti를 그 안에 넣을 것! */
 #noti-box {
   position:fixed;
   top:20px;
