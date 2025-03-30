@@ -15,3 +15,5 @@ raffle.addEventListener("click", (e) => {
   result.innerText = `당첨자 : ${winner}`;
   result.classList.add("show");
 });
+
+
