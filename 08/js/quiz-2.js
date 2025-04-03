@@ -28,6 +28,6 @@ raffle.addEventListener("click", (e) =>{
 //<div id="greeting"><b>Hello</b> world!</div>
 
 //document.querySelector("#name").value        // "홍길동"
-//document.querySelector("#greeting").innerText // "Hello world!"
-//document.querySelector("#greeting").innerHTML // "<b>Hello</b> world!"
+//document.querySelector("#greeting").innerText // "Hello world!" 태그 사이의 text
+//document.querySelector("#greeting").innerHTML // "<b>Hello</b> world!" 태그 사이의 HTML 
 
