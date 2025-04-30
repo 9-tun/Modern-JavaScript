@@ -5,7 +5,7 @@ xhr.send();
 xhr.onreadystatechange = function () {
   if (xhr.readyState === 4 && xhr.status === 200) {
     let students = JSON.parse(xhr.responseText);
-    renderHTML(students);
+    renderHTML(students); // 서버에서 받아온 학생 데이터(students)를 웹페이지에 출력
   }
 };
 

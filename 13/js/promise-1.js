@@ -1,4 +1,4 @@
-let likePizza = true;      // 이 값을 false로 바꿔서도 테스트해 보세요. 
+let likePizza = false;
 const pizza = new Promise((resolve, reject) => {
   if (likePizza) 
     resolve('피자를 주문합니다.');
