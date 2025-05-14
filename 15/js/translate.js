@@ -11,3 +11,5 @@ ctx.fillRect(10, 10, 100, 100);
 ctx.fillStyle = "red";
 ctx.fillRect(50, 50, 80, 20);
 ctx.restore();   // 캔버스 드로잉 상태 복구 
+ctx.fillStyle = "Yellow";
+ctx.fillRect(20, 20, 50, 50);
