@@ -23,6 +23,7 @@ const circle = {
   function move() {
     drawCircle();
     circle.x += circle.dx;   // circle.x = circle.x + circle.dx
+    //circle.y += circle.dy;
     requestAnimationFrame(move);
   }
   

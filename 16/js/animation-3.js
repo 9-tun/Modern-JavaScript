@@ -10,11 +10,27 @@ function Circle(x, y, radius, color) {
   this.radius = radius;
   this.color = color;
 
+  this.dx = Math.floor(Math.random()*4) + 1;
+  this.dy = Math.floor(Math.random()*4) + 1;
+
   this.draw = function() {
     ctx.beginPath();
     ctx.fillStyle = this.color;
     ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
     ctx.fill();
+  }
+
+  this.animate = function(){
+    this.x += this.dx;
+    this.y += this.dy;
+
+    if(this.x + this.radius > canvas.width || this.x - this.radius < 0){
+      this.dx = -this.dx;
+    }
+    if(this.y + this.radius > canvas.height || this.y - this.radius < 0){
+      this.dy = -this.dy;
+    }    
+    this.draw();
   }
 }
 
@@ -27,6 +43,16 @@ for (let i = 0; i < 20; i++) {
   objs.push(new Circle(x, y, radius, color));      
 }
 
-for (let i = 0; i < objs.length; i++) {
-  objs[i].draw();
+// for (let i = 0; i < objs.length; i++) {
+//   objs[i].draw();
+// }
+
+function update(){
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  for(let i =0; i< objs.length; i++){
+    let obj = objs[i];
+    obj.animate();
+  }
+  requestAnimationFrame(update); // 다음 프레임에 매개인자로 전달한 함수 호출하기
 }
+update();

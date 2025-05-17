@@ -21,5 +21,7 @@ function Circle(x, y, radius, color) {
 
 const circleOne = new Circle(100, 100, 50, "red");   // 인스턴스 만들기
 const circleTwo = new Circle(200, 200, 20, "blue");   // 인스턴스 만들기
+//const circleThree = new Circle(150, 150, 30, "yellow");   // 인스턴스 만들기
 circleOne.draw();
 circleTwo.draw();
+//circleThree.draw();
