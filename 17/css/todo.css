@@ -40,3 +40,30 @@ form button {
 }
 
  /* todo 항목 */
+ .todo {
+  margin: 0.5rem;                          /* 항목 간 여백 */
+  font-size: 1.2rem;                       /* 글자 크기 */
+  display: flex;                           /* Flexbox 레이아웃 사용 */
+  justify-content: space-between;          /* 좌우 요소 간 최대 간격 배분: 첫 번째 요소는 왼쪽 끝, 마지막 요소는 오른쪽 끝, 나머지는 둘 사이에 동일 간격으로 삽입 */
+  align-items: center;                     /* 수직 정렬 중앙 */
+ }
+
+ .todo .todo-content{                       /* .todo 클래스 안의 .todo-content 요소 선택 */
+  flex:1;
+  padding:0.5rem 1rem;
+  border-bottom: 1px dotted #ccc;
+ }
+
+ .todo button {
+  padding: 0.5rem;
+  margin-right: 0.2rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+ }
+
+  .completed{
+    text-decoration: line-through;
+    color: #d8d8d8;
+    opacity: 0.5;
+  }
+  
